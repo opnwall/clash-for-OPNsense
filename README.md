@@ -1,6 +1,7 @@
 # clash-for-OPNsense
-在OPNsense上运行的命令行代理工具，在OPNsense 24.1.6上测试成功。
+OPNsense上运行的命令行代理工具，在OPNsense 24.1.6上测试成功。
 
+# 项目介绍
 源代码引自：
 https://github.com/junyu33/clash-for-freebsd
 
@@ -10,9 +11,10 @@ https://github.com/tindy2013/subconverter
 Clash可以用mihomo(meta)替换：
 https://github.com/MetaCubeX/mihomo/releases
 
-免费订阅链接：<br>
-`https://neko-warp.nloli.xyz/neko_warp.yaml` <br>
-`https://subs.zeabur.app/clash` <br>
+免费订阅链接：
+`https://neko-warp.nloli.xyz/neko_warp.yaml` 
+`https://subs.zeabur.app/clash`
+<br>
 
 # 使用须知
 
@@ -20,14 +22,14 @@ https://github.com/MetaCubeX/mihomo/releases
 - 本项目是基于 [clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) 、[yacd](https://github.com/haishanh/yacd) 进行的配置整合。
 - 此项目不提供任何订阅信息，请自行准备Clash订阅地址。
 - 运行脚本前请手动更改`.env`文件中的`CLASH_URL`变量值，否则无法正常运行。
-- 当前只支持x86_64台
+- 当前只支持x86_64平台。
 <br>
 
 # 使用教程
 
 ## 下载项目
 
-进入OPNsense的shell环境，安装git程序
+以root用户进入OPNsense的shell环境，安装git程序
 ```bash
 $ pkg install git
 ```
@@ -56,7 +58,7 @@ vi .env
 ## 启动程序
 
 - 安装依赖
-安装bash、sudo、zsh。
+安装bash、zsh。
 
 ```bash
 pkg install bash
@@ -66,7 +68,7 @@ pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
 - 启动脚本
 
 ```bash
-sudo bash start.sh
+bash start.sh
 
 正在检测订阅地址...
 Clash订阅地址可访问！   OK  
@@ -133,7 +135,7 @@ OPNsense的透明代理设置，请参阅[鐵血男兒的BLOG](https://pfchina.o
 
 # 常见问题
 
-1、必须使用 `sudo bash xxx.sh` 运行脚本。
+1、必须使用 `bash xxx.sh` 运行脚本。
 
 2、部分用户在UI界面找不到代理节点，是因为机场提供的clash配置文件是经过base64编码的，且配置文件格式不符合clash配置标准。
 
