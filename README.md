@@ -104,13 +104,13 @@ tcp4       0      0 192.168.101.4.3128     *.*                    LISTEN
 OPNsense的透明代理设置，请参阅 [鐵血男兒的BLOG](https://pfchina.org/?p=10526)。
 <br>
 
-## clash控制面板
+## 控制面板
 
 1、 通过地址：`http://LAN IP:9090/ui`访问Clash控制面板。
 
 2、 在`API Base URL`一栏中输入：http://\<ip\>:9090 ，在`Secret(optional)`一栏中输入访问安全密钥。
 
-3、 点击Add，并单击刚刚输入的管理界面地址，之后便可以通过Web管理界面对clash进行一些配置。
+3、 点击Add，并单击刚刚输入的管理地址，之后便可以通过Web管理界面对clash进行一些配置。
 
 # 常见问题
 
