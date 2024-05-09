@@ -110,7 +110,7 @@ tcp4       0      0 192.168.101.4.3128     *.*                    LISTEN
 
 - 透明代理
 
-OPNsense的透明代理设置，请参阅[鐵血男兒的BLOG](https://pfchina.org/?p=10526)。
+OPNsense的透明代理设置，请参阅 [鐵血男兒的BLOG](https://pfchina.org/?p=10526)。
 <br>
 
 ## clash控制面板
