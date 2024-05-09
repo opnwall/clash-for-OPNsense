@@ -36,7 +36,7 @@ pkg install bash
 pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
 ```
 
-2、下载本项目
+2、下载项目
 ```bash
 git clone https://github.com/fxn2020/clash-for-OPNsense.git
 ```
@@ -119,7 +119,7 @@ OPNsense的透明代理设置，请参阅鐵血男兒的[博客](https://pfchina
 3、 项目集成的订阅转换功能如果无法使用，可以通过自建或者第三方平台对订阅地址进行转换。
 
 # 免费订阅
-这里提供两个免费订阅链接，不保证长期有效。
+提供两个免费订阅链接，不保证长期有效。
 
 https://tofree.zeabur.app/
 
