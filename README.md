@@ -11,12 +11,6 @@ https://github.com/tindy2013/subconverter
 Clash程序来自：
 https://github.com/MetaCubeX/mihomo/releases
 
-## 免费订阅链接：
-```bash
-https://neko-warp.nloli.xyz/neko_warp.yaml
-https://subs.zeabur.app/clash
-```
-
 # 使用须知
 
 1、 运行脚本建议使用root用户，或者使用sudo提权。
@@ -126,3 +120,8 @@ OPNsense的透明代理设置，请参阅 [鐵血男兒的BLOG](https://pfchina.
 
 3、 项目集成的订阅转换功能如果无法使用，可以通过自建或者第三方平台对订阅地址进行转换。
 
+# 免费订阅
+```bash
+https://neko-warp.nloli.xyz/neko_warp.yaml
+https://subs.zeabur.app/clash
+```
