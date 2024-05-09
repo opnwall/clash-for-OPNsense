@@ -27,22 +27,27 @@ https://github.com/MetaCubeX/mihomo/releases
 
 ## 下载项目
 
-进入OPNsense的shell环境，下载本项目
+进入OPNsense的shell环境，安装git程序
+```bash
+$ pkg install git
+```
+
+下载本项目
 
 ```bash
-$ git clone https://github.com/fxn2020/clash-for-OPNsense.git
+git clone https://github.com/fxn2020/clash-for-OPNsense.git
 ```
 重命名文件夹
 
 ```bash
-$ mv /root/clash-for-OPNsense /root/clash
+mv /root/clash-for-OPNsense /root/clash
 ```
 
 进入clash目录，编辑`.env`文件，修改变量`CLASH_URL`的值。
 
 ```bash
-$ cd clash
-$ vi .env
+cd clash
+vi .env
 ```
 
 > **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
@@ -61,7 +66,7 @@ pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
 - 启动脚本
 
 ```bash
-$ sudo bash start.sh
+sudo bash start.sh
 
 正在检测订阅地址...
 Clash订阅地址可访问！   OK  
@@ -92,7 +97,7 @@ http://<LAN ip>:9090/ui
 - 检查端口
 
 ```bash
-$ netstat -f inet -na | grep -i LISTEN
+netstat -f inet -na | grep -i LISTEN
 tcp46 0 0 *.7890 *.* LISTEN 
 tcp46 0 0 *.9090 *.* LISTEN
 ```
