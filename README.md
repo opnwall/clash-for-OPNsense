@@ -11,8 +11,8 @@ Clash可以用mihomo(meta)替换：
 https://github.com/MetaCubeX/mihomo/releases
 
 免费订阅链接：<br>
-https://neko-warp.nloli.xyz/neko_warp.yaml <br>
-https://subs.zeabur.app/clash <br>
+`https://neko-warp.nloli.xyz/neko_warp.yaml` <br>
+`https://subs.zeabur.app/clash` <br>
 
 # 使用须知
 
@@ -92,7 +92,7 @@ http://<LAN ip>:9090/ui
 - 检查端口
 
 ```bash
-root@opn:~ # netstat -f inet -na | grep -i LISTEN
+$ netstat -f inet -na | grep -i LISTEN
 tcp46 0 0 *.7890 *.* LISTEN 
 tcp46 0 0 *.9090 *.* LISTEN
 ```
@@ -103,9 +103,9 @@ tcp46 0 0 *.9090 *.* LISTEN
 OPNsense的透明代理设置，请参阅[鐵血男兒的BLOG](https://pfchina.org/?p=10526)。
 <br>
 
-## Clash控制面板
+## clash控制面板
 
-- 访问Clash控制面板
+- 访问clash控制面板
 
 通过地址：`http://LAN IP:9090/ui`访问Clash控制面板。
 
@@ -113,7 +113,7 @@ OPNsense的透明代理设置，请参阅[鐵血男兒的BLOG](https://pfchina.o
 
 在`API Base URL`一栏中输入：http://\<ip\>:9090 ，在`Secret(optional)`一栏中输入访问安全密钥。
 
-点击Add，并单击刚刚输入的管理界面地址，之后便可在浏览器上进行一些配置。
+点击Add，并单击刚刚输入的管理界面地址，之后便可以通过Web管理界面对clash进行一些配置。
 
 <br>
 
