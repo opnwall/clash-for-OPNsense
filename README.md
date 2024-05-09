@@ -104,11 +104,11 @@ OPNsense的透明代理设置，请参阅鐵血男兒的[博客](https://pfchina
 
 ## 控制面板
 
-1、 通过地址：`http://LAN IP:9090/ui`访问Clash控制面板。
+1、 通过地址`http://LAN IP:9090/ui`访问Clash控制面板。
 
 2、 在`API Base URL`一栏中输入：http://\<ip\>:9090 ，在`Secret(optional)`一栏中输入访问安全密钥。
 
-3、 点击Add，并单击刚刚输入的管理地址，之后便可以通过Web界面对clash进行配置。
+3、 点击`Add`，并单击刚刚输入的管理地址，之后便可以通过Web界面对clash进行配置。
 
 # 常见问题
 
@@ -119,7 +119,8 @@ OPNsense的透明代理设置，请参阅鐵血男兒的[博客](https://pfchina
 3、 项目集成的订阅转换功能如果无法使用，可以通过自建或者第三方平台对订阅地址进行转换。
 
 # 免费订阅
-```bash
-https://neko-warp.nloli.xyz/neko_warp.yaml
-https://subs.zeabur.app/clash
-```
+这里提供两个免费订阅链接，不保证长期有效。
+
+https://tofree.zeabur.app/
+
+https://neko-warp.nloli.xyz/
