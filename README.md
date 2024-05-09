@@ -14,8 +14,6 @@ https://github.com/MetaCubeX/mihomo/releases
 免费订阅链接：
 ```bash
 https://neko-warp.nloli.xyz/neko_warp.yaml
-```
-```bash
 https://subs.zeabur.app/clash
 ```
 <br>
@@ -33,9 +31,13 @@ https://subs.zeabur.app/clash
 
 ## 下载项目
 
-以root用户进入OPNsense的shell环境，安装git程序
+以root用户进入OPNsenseshell环境。
+- 安装依赖
+
 ```bash
 pkg install git
+pkg install bash
+pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
 ```
 
 下载本项目
@@ -61,13 +63,6 @@ vi .env
 
 ## 启动程序
 
-- 安装依赖
-安装bash、zsh。
-
-```bash
-pkg install bash
-pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
-```
 - 启动脚本
 
 ```bash
@@ -100,12 +95,9 @@ http://<LAN ip>:9090/ui
 查看状态: sh /usr/local/etc/rc.d/clash status 
 ```
 - 检查端口
-运行以下命令，检查端口占用：
+运行端口查看命令：
 ```bash
 netstat -f inet -na | grep -i LISTEN
-```
-显示内容如下：
-```bash
 tcp46      0      0 *.7891                 *.*                    LISTEN     
 tcp46      0      0 *.7890                 *.*                    LISTEN     
 tcp46      0      0 *.9090                 *.*                    LISTEN     
@@ -115,7 +107,7 @@ tcp4       0      0 127.0.0.1.3129         *.*                    LISTEN
 tcp4       0      0 127.0.0.1.3128         *.*                    LISTEN     
 tcp4       0      0 192.168.101.4.3128     *.*                    LISTEN 
 ```
-如果7890和9090端口被占用，说明服务clash程序启动成功，现在客户端就可以通过代理上网了。
+如果7890和9090端口被占用，说明clash程序启动成功，现在客户端就可以通过代理上网了。
 
 - 透明代理
 
