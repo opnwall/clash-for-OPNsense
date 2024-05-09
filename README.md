@@ -1,5 +1,5 @@
 # clash-for-OPNsense
-OPNsense上运行的命令行代理工具，在OPNsense 24.1.6上测试成功。
+OPNsense上运行的命令行代理工具，在OPNsense 24.1.6上测试通过。
 
 # 项目来源
 源代码来自：
@@ -100,7 +100,7 @@ tcp4       0      0 192.168.101.4.3128     *.*                    LISTEN
 
 3、透明代理
 
-透明代理设置，请参阅鐵血男兒的[博客](https://pfchina.org/?p=10526)。
+透明代理设置，请参阅[在OPNsense设置Clash透明代理](https://pfchina.org/?p=10526)。
 
 ## 控制面板
 
