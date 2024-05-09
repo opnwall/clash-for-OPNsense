@@ -62,7 +62,6 @@ vi .env
 
 ```bash
 pkg install bash
-pkg install sudo
 pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
 ```
 - 启动脚本
