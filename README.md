@@ -16,7 +16,6 @@ https://github.com/MetaCubeX/mihomo/releases
 https://neko-warp.nloli.xyz/neko_warp.yaml
 https://subs.zeabur.app/clash
 ```
-<br>
 
 # 使用须知
 
@@ -59,7 +58,6 @@ vi .env
 ```
 
 > **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
-<br>
 
 ## 启动程序
 
@@ -120,13 +118,11 @@ OPNsense的透明代理设置，请参阅 [鐵血男兒的BLOG](https://pfchina.
 
 3、 点击Add，并单击刚刚输入的管理界面地址，之后便可以通过Web管理界面对clash进行一些配置。
 
-<br>
-
 # 常见问题
 
 1、 必须使用 `bash xxx.sh` 运行脚本。
 
-2、 部分用户在UI界面找不到代理节点，是因为机场提供的clash配置文件是经过base64编码的，且配置文件格式不符合clash配置标准。
+2、 部分用户在UI界面找不到代理节点，是因为机场提供的clash配置文件是经过base64编码的，且配置文件格式不符合clash配置标准所致。
 
 3、 项目集成的订阅转换功能如果无法使用，可以通过自建或者第三方平台对订阅地址进行转换。
 
