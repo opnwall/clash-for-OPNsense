@@ -95,13 +95,22 @@ http://<LAN ip>:9090/ui
 查看状态: sh /usr/local/etc/rc.d/clash status 
 ```
 - 检查端口
-
+运行以下命令，检查端口占用：
 ```bash
 netstat -f inet -na | grep -i LISTEN
-tcp46 0 0 *.7890 *.* LISTEN 
-tcp46 0 0 *.9090 *.* LISTEN
 ```
-以上步鄹如果正常，说明服务clash程序启动成功，现在客户端就可以通过代理上网了。
+显示内容如下：
+```bash
+tcp46      0      0 *.7891                 *.*                    LISTEN     
+tcp46      0      0 *.7890                 *.*                    LISTEN     
+tcp46      0      0 *.9090                 *.*                    LISTEN     
+tcp4       0      0 127.0.0.1.953          *.*                    LISTEN     
+tcp4       0      0 *.53                   *.*                    LISTEN     
+tcp4       0      0 127.0.0.1.3129         *.*                    LISTEN     
+tcp4       0      0 127.0.0.1.3128         *.*                    LISTEN     
+tcp4       0      0 192.168.101.4.3128     *.*                    LISTEN 
+```
+如果7890和9090端口被占用，说明服务clash程序启动成功，现在客户端就可以通过代理上网了。
 
 - 透明代理
 
