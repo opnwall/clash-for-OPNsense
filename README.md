@@ -1,5 +1,5 @@
 # clash-for-OPNsense
-在OPNsense上运行的命令行代理工具，在OPNsense 21.1.6上测试成功。
+在OPNsense上运行的命令行代理工具，在OPNsense 24.1.6上测试成功。
 
 源代码引自：
 https://github.com/junyu33/clash-for-freebsd
@@ -10,10 +10,9 @@ https://github.com/tindy2013/subconverter
 Clash可以用mihomo(meta)替换：
 https://github.com/MetaCubeX/mihomo/releases
 
-免费订阅链接
-https://neko-warp.nloli.xyz/neko_warp.yaml<br>
-https://subs.zeabur.app/clash
-<br>
+免费订阅链接：
+https://neko-warp.nloli.xyz/neko_warp.yaml <br>
+https://subs.zeabur.app/clash <br>
 
 # 使用须知
 
@@ -52,15 +51,12 @@ $ vi .env
 ## 启动程序
 
 - 安装依赖
-安装bash、sudo、zsh，zsh根据自己防火墙的FreeBSD系统版本选择安装
+安装bash、sudo、zsh。
 
 ```bash
 pkg install bash
 pkg install sudo
 pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
-pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/zsh-5.9_4.pkg
-pkg add https://pkg.freebsd.org/FreeBSD:15:amd64/latest/All/zsh-5.9_4.pkg
-
 ```
 - 启动脚本
 
@@ -127,5 +123,5 @@ OPNsense的透明代理设置，请参阅[鐵血男兒的BLOG](https://pfchina.o
 
 2、部分用户在UI界面找不到代理节点，是因为机场提供的clash配置文件是经过base64编码的，且配置文件格式不符合clash配置标准。
 
-3、项目集成的 订阅转换功能如果无法使用，可以通过自建或者第三方平台对订阅地址进行转换。
+3、项目集成的订阅转换功能如果无法使用，可以通过自建或者第三方平台对订阅地址进行转换。
 
