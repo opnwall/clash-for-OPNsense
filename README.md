@@ -35,7 +35,7 @@ https://subs.zeabur.app/clash
 
 以root用户进入OPNsense的shell环境，安装git程序
 ```bash
-$ pkg install git
+pkg install git
 ```
 
 下载本项目
