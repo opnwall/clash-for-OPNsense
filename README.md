@@ -8,7 +8,7 @@ https://github.com/junyu33/clash-for-freebsd
 订阅转换部分代码引自：
 https://github.com/tindy2013/subconverter
 
-Clash可以用mihomo(meta)替换：
+Clash用mihomo(meta)替换：
 https://github.com/MetaCubeX/mihomo/releases
 
 免费订阅链接：
@@ -95,7 +95,6 @@ http://<LAN ip>:9090/ui
 查看状态: sh /usr/local/etc/rc.d/clash status 
 ```
 - 检查端口
-运行端口查看命令：
 ```bash
 netstat -f inet -na | grep -i LISTEN
 tcp46      0      0 *.7891                 *.*                    LISTEN     
