@@ -165,7 +165,7 @@ cat $Temp_Dir/proxy.txt >> $Temp_Dir/config.yaml
 
 # 配置Clash面板
 Work_Dir=$(cd $(dirname $0); pwd)
-Dashboard_Dir="${Work_Dir}/dashboard/public"
+Dashboard_Dir="${Work_Dir}/ui"
 
 if [[ $isBSD == false ]]; then
     sed -ri "s@^# external-ui:.*@external-ui: ${Dashboard_Dir}@g" $Conf_Dir/config.yaml
