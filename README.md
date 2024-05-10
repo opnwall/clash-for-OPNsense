@@ -50,7 +50,7 @@ cd clash
 vi .env
 ```
 
-> **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义 Clash Secret，值为空时，脚本将自动生成随机字符串。
+> **注意：** `.env` 文件中的变量 `CLASH_SECRET` 为自定义访问安全密钥，为空时，脚本将自动生成随机字符串。
 
 ## 启动程序
 
