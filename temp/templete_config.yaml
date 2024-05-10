@@ -1,9 +1,13 @@
-port: 7890 
+port: 7890
 allow-lan: true
 mode: rule
 log-level: info
+unified-delay: true
+ipv6: true
+global-client-fingerprint: chrome
 external-controller: '0.0.0.0:9090'
-secret: 'b&ZlKTte5OnEt2Sn'
+secret: 123456
+external-ui: /root/clash/ui
 dns:
   enable: true
   ipv6: true
