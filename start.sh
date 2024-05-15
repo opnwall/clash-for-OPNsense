@@ -176,9 +176,12 @@ else
 fi
 
 ## 添加运行参数到/etc/rc.conf
-
 echo -e '\n添加运行参数...'
 sysrc clash_enable="YES"
+
+## 复制脚本文件并添加执行权限
+cp $Conf_Dir/clash.sh /usr/local/etc/rc.d/clash
+chmod +x /usr/local/etc/rc.d/clash
 
 
 ## 启动Clash服务
@@ -188,13 +191,7 @@ Text6="代理启动失败！"
 nohup $Server_Dir/bin/clash -d $Conf_Dir &> $Log_Dir/clash.log &
 ReturnStatus=$?
 
-# 复制脚本文件并添加执行权限
-
-cp $Conf_Dir/clash.sh /usr/local/etc/rc.d/clash
-chmod +x /usr/local/etc/rc.d/clash
-
 if_success $Text5 $Text6 $ReturnStatus
-
 
 # 输出clash仪表盘地址和安全密钥
 echo ''
