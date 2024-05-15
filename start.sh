@@ -193,10 +193,6 @@ ReturnStatus=$?
 cp $Conf_Dir/clash.sh /usr/local/etc/rc.d/clash
 chmod +x /usr/local/etc/rc.d/clash
 
-# 启动服务
-
-sh /usr/local/etc/rc.d/clash start
-
 if_success $Text5 $Text6 $ReturnStatus
 
 
