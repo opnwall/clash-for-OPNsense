@@ -33,7 +33,7 @@ https://github.com/MetaCubeX/mihomo/releases
 ```bash
 pkg install git
 pkg install bash
-pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
+pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/zsh-5.9_4.pkg
 ```
 
 2、下载项目
