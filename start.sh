@@ -201,7 +201,7 @@ echo -e "\033[32m访问密钥: ${Secret} \033[0m"
 
 echo ''
 echo -e '\n命令说明：'
-echo -e "\033[32m开启代理: sh /usr/local/etc/rc.d/clash start \033[0m"
-echo -e "\033[32m关闭代理: sh /usr/local/etc/rc.d/clash stop \033[0m"
-echo -e "\033[32m重启代理: sh /usr/local/etc/rc.d/clash restart \033[0m"
-echo -e "\033[32m查看状态: sh /usr/local/etc/rc.d/clash status \033[0m"
+echo -e "\033[32m开启代理: service clash start \033[0m"
+echo -e "\033[32m关闭代理: service clash stop \033[0m"
+echo -e "\033[32m重启代理: service clash restart \033[0m"
+echo -e "\033[32m查看状态: service clash status \033[0m"
