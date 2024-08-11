@@ -79,10 +79,10 @@ http://<LAN ip>:9090/ui
 访问密钥: 123456 
 
 命令说明：
-开启代理: sh /usr/local/etc/rc.d/clash start 
-关闭代理: sh /usr/local/etc/rc.d/clash stop 
-重启代理: sh /usr/local/etc/rc.d/clash restart 
-查看状态: sh /usr/local/etc/rc.d/clash status 
+开启代理: service clash start
+关闭代理: service clash stop
+重启代理: service clash restart
+查看状态: service clash status
 ```
 2、检查端口
 ```bash
