@@ -1,5 +1,5 @@
 # clash-for-OPNsense
-OPNsense上运行的命令行代理工具，在OPNsense 24.1.6上测试通过。
+OPNsense上运行的命令行代理工具，在OPNsense 24.7_9测试通过。
 
 # 项目来源
 源代码来自：
