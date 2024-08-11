@@ -9,7 +9,8 @@ https://github.com/junyu33/clash-for-freebsd
 https://github.com/tindy2013/subconverter
 
 Clash程序来自：
-https://github.com/MetaCubeX/mihomo/releases
+https://github.com/MetaCubeX/mihomo/releases，
+可以下载最新版本替换bin目录下的clash程序。
 
 # 使用须知
 
