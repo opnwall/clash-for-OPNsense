@@ -180,7 +180,7 @@ echo -e '\n添加运行参数...'
 sysrc clash_enable="YES"
 
 ## 复制脚本文件并添加执行权限
-cp $Conf_Dir/clash.sh /usr/local/etc/rc.d/clash
+cp $Conf_Dir/rc /usr/local/etc/rc.d/clash
 chmod +x /usr/local/etc/rc.d/clash
 
 
