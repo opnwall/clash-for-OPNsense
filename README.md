@@ -104,7 +104,7 @@ tcp4       0      0 192.168.101.4.3128     *.*                    LISTEN
 
 3、透明代理
 
-透明代理设置，请参阅[OPNsense设置Clash透明代理](https://pfchina.org/?p=10526)。
+透明代理设置，请参阅[pfSense、OPNsense设置http透明代理教程](https://pfchina.org/?p=13572)。
 
 ## 控制面板
 
