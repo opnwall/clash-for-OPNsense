@@ -35,7 +35,7 @@ https://github.com/MetaCubeX/mihomo/releases，
 pkg install git
 pkg install bash
 pkg add https://pkg.freebsd.org/FreeBSD:13:amd64/latest/All/zsh-5.9_4.pkg
-pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/zsh-5.9_4.pkg
+pkg add https://pkg.freebsd.org/FreeBSD:14:amd64/latest/All/zsh-5.9_5.pkg
 pkg add https://pkg.freebsd.org/FreeBSD:15:amd64/latest/All/zsh-5.9_4.pkg
 ```
 > **注意：** `zsh`安装对应防火墙FreeBSD平台系统的版本。
