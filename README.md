@@ -3,6 +3,7 @@
 
 # 项目来源
 基于以下程序整合：
+
 [clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases)/
 [sin-box](https://github.com/SagerNet/sing-box)/
 [tun2socks](https://github.com/xjasonlyu/tun2socks)/ 
@@ -12,7 +13,9 @@
 
 # 使用须知
 1、 脚本不提供任何订阅信息，请自行准备Clash订阅地址，示例配置也仅供参考。
+
 2、 使用订阅功能前请手动更改`env`文件中的`CLASH_URL`变量值，否则无法正常运行。
+
 3、 当前只支持x86_64平台。
 
 # 安装程序
@@ -23,6 +26,7 @@ sh install.sh
 ```
 # 使用方法
 请参考以下文章：
+
 [OPNsense代理全家樋安装配置教程](https://pfchina.org/?p=14148)
 
 # 常见问题
