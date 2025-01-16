@@ -1,16 +1,12 @@
 # clash for OPNsense 代理全家桶
-OPNsense上运行的Web控制的代理工具，在OPNsense 24.7上测试通过。
+这是一个在OPNSense上运行clash、sing-box、tun2socks、mosdns的一键安装程序，支持clash订阅转换，支持透明代理，支持DNS分流。带Web控制程序，可以进行配置修改、控制程序运行、查看日志等。在OPNsense 24.7.11上测试通过。
 
 # 项目来源
 订阅转换代码来自：
 https://github.com/tindy2013/subconverter
 
-Clash程序来自：
-https://github.com/MetaCubeX/mihomo/releases
-
 # 使用须知
-
-1、 项目基于 [clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases)  [sin-box](https://github.com/SagerNet/sing-box)  [tun2socks](https://github.com/xjasonlyu/tun2socks)  [mosdns](https://github.com/IrineSistiana/mosdns) 、[yacd](https://github.com/haishanh/yacd) 进行整合。
+1、 项目基于 [clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) 、[sin-box](https://github.com/SagerNet/sing-box) 、[tun2socks](https://github.com/xjasonlyu/tun2socks) 、[mosdns](https://github.com/IrineSistiana/mosdns) 、[yacd](https://github.com/haishanh/yacd) 进行整合。
 
 2、 脚本不提供任何订阅信息，请自行准备Clash订阅地址。
 
@@ -24,11 +20,9 @@ https://github.com/MetaCubeX/mihomo/releases
 ```bash
 sh install.sh
 ```
-
 # 使用方法
 请参考以下文章：
 [OPNsense代理全家樋安装配置教程](https://pfchina.org/?p=14148)
-
 
 # 常见问题
 
@@ -36,26 +30,15 @@ sh install.sh
 
 # 相关文章
 
-[pfSense、OPNsense设置http透明代理教程](https://pfchina.org/?p=13572)
-
-[pfSense、OPNsense配置tun2socks透明代理教程](https://pfchina.org/?p=13437)
-
 [pfSense、OPNsense配置Xray代理教程](https://pfchina.org/?p=13013)
-
 [pfSense、OPNsense配置trojan-go教程](https://pfchina.org/?p=9885)
-
 [pfSense、OPNsense配置v2ray代理教程](https://pfchina.org/?p=4032)
-
 [pfSense、OPNsense配置Clash代理教程](https://pfchina.org/?p=10526)
-
 [pfSense、OPNsense配置hysteria代理教程](https://pfchina.org/?p=9524)
-
+[pfSense、OPNsense设置http透明代理教程](https://pfchina.org/?p=13572)
 [pfSense、OPNsense配置sing-box代理教程](https://pfchina.org/?p=12933)
-
 [pfSense、OPNsense配置http透明代理教程](https://pfchina.org/?p=13572)
-
 [pfSense、OPNsense配置hysteria2代理教程](https://pfchina.org/?p=13065)
-
 [pfSense、OPNsense配置tun2socks透明代理](https://pfchina.org/?p=13437)
-
+[pfSense、OPNsense配置tun2socks透明代理教程](https://pfchina.org/?p=13437)
 [pfSense、OPNsense配置hysteria(TUN) 透明代理教程](https://pfchina.org/?p=13480)
