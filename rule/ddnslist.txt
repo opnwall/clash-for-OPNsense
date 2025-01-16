@@ -1,0 +1,2 @@
+# DDNS
+#domain:123123123.xyz
