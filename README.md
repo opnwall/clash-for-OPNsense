@@ -13,11 +13,11 @@ OPNSense上运行clash、sing-box、tun2socks、mosdns的一键安装程序。�
 [subconverter](https://github.com/tindy2013/subconverter)
 
 # 使用须知
-1、 脚本不提供任何订阅信息，请自行准备Clash订阅地址，示例配置也仅供参考。
+1、 脚本不提供任何订阅信息，示例配置仅供参考。
 
 2、 使用订阅功能前请手动更改`env`文件中的`CLASH_URL`变量值，否则无法正常运行。
 
-3、 当前只支持x86_64平台。
+3、 支持x86_64平台。
 
 # 安装程序
 下载压缩包并解压，上传到防火墙，进入目录，运行以下命令：
