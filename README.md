@@ -3,11 +3,11 @@
 
 # 项目来源
 基于以下程序整合：
-[clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) 
-[sin-box](https://github.com/SagerNet/sing-box) 
-[tun2socks](https://github.com/xjasonlyu/tun2socks) 
-[mosdns](https://github.com/IrineSistiana/mosdns)
-[yacd](https://github.com/haishanh/yacd) 
+[clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) /
+[sin-box](https://github.com/SagerNet/sing-box)  /
+[tun2socks](https://github.com/xjasonlyu/tun2socks) / 
+[mosdns](https://github.com/IrineSistiana/mosdns) /
+[yacd](https://github.com/haishanh/yacd) /
 [subconverter](https://github.com/tindy2013/subconverter)
 
 # 使用须知
