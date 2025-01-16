@@ -2,17 +2,18 @@
 这是一个在OPNSense上运行clash、sing-box、tun2socks、mosdns的一键安装程序，支持clash订阅转换，支持透明代理，支持DNS分流。带Web控制程序，可以进行配置修改、控制程序运行、查看日志等。在OPNsense 24.7.11上测试通过。
 
 # 项目来源
-订阅转换代码来自：
-https://github.com/tindy2013/subconverter
+基于以下程序整合：
+[subconverter] (https://github.com/tindy2013/subconverter)
+[clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) 
+[sin-box](https://github.com/SagerNet/sing-box) 
+[tun2socks](https://github.com/xjasonlyu/tun2socks) 
+[mosdns](https://github.com/IrineSistiana/mosdns)
+[yacd](https://github.com/haishanh/yacd) 
 
 # 使用须知
-1、 项目基于 [clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) 、[sin-box](https://github.com/SagerNet/sing-box) 、[tun2socks](https://github.com/xjasonlyu/tun2socks) 、[mosdns](https://github.com/IrineSistiana/mosdns) 、[yacd](https://github.com/haishanh/yacd) 进行整合。
-
-2、 脚本不提供任何订阅信息，请自行准备Clash订阅地址，示例配置也仅供参考。
-
-3、 使用订阅功能前请手动更改`env`文件中的`CLASH_URL`变量值，否则无法正常运行。
-
-4、 当前只支持x86_64平台。
+1、 脚本不提供任何订阅信息，请自行准备Clash订阅地址，示例配置也仅供参考。
+2、 使用订阅功能前请手动更改`env`文件中的`CLASH_URL`变量值，否则无法正常运行。
+3、 当前只支持x86_64平台。
 
 # 安装程序
 将下载的压缩包解压后，上传到防火墙，进入程序目录，运行以下命令安装：
