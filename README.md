@@ -7,11 +7,11 @@ A one-click installation program for running Clash, Sing-Box, Tun2socks, and Mos
 ## Project Source
 This project integrates the following tools:
 
-[Clash (mihomo)](https://github.com/MetaCubeX/mihomo/releases) /  
-[Sing-Box](https://github.com/SagerNet/sing-box) /  
-[Tun2socks](https://github.com/xjasonlyu/tun2socks) /  
-[Mosdns](https://github.com/IrineSistiana/mosdns) /  
-[YACD](https://github.com/haishanh/yacd) /  
+[Clash (mihomo)](https://github.com/MetaCubeX/mihomo/releases) 
+[Sing-Box](https://github.com/SagerNet/sing-box) 
+[Tun2socks](https://github.com/xjasonlyu/tun2socks) 
+[Mosdns](https://github.com/IrineSistiana/mosdns) 
+[YACD](https://github.com/haishanh/yacd) 
 [Subconverter](https://github.com/tindy2013/subconverter)
 
 ## Notes
