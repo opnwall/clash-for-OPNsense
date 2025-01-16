@@ -3,12 +3,12 @@
 
 # 项目来源
 基于以下程序整合：
-[clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) /
-[sin-box](https://github.com/SagerNet/sing-box)  /
-[tun2socks](https://github.com/xjasonlyu/tun2socks) / 
-[mosdns](https://github.com/IrineSistiana/mosdns) /
-[yacd](https://github.com/haishanh/yacd) /
-[subconverter](https://github.com/tindy2013/subconverter)
+[clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases)/
+[sin-box](https://github.com/SagerNet/sing-box)/
+[tun2socks](https://github.com/xjasonlyu/tun2socks)/ 
+[mosdns](https://github.com/IrineSistiana/mosdns)/
+[yacd](https://github.com/haishanh/yacd)/
+[subconverter](https://github.com/tindy2013/subconverter)/
 
 # 使用须知
 1、 脚本不提供任何订阅信息，请自行准备Clash订阅地址，示例配置也仅供参考。
