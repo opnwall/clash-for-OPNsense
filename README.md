@@ -44,7 +44,7 @@ Please refer to the following article:
 ## FAQs
 If subscription conversion does not work, you can use [SublinkX](https://github.com/gooaclok819/sublinkX) to set up your own platform for subscription conversion.
 
-## Related Articles
+## References
 - [pfSense、OPNsense配置Xray代理教程](https://pfchina.org/?p=13013)  
 - [pfSense、OPNsense配置trojan-go教程](https://pfchina.org/?p=9885)  
 - [pfSense、OPNsense配置v2ray代理教程](https://pfchina.org/?p=4032)  
