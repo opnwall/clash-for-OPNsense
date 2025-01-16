@@ -1,4 +1,3 @@
-
 ## Clash for OPNsense Proxy Suite
 A one-click installation program for running Clash, Sing-Box, Tun2socks, and Mosdns on OPNsense. It supports Clash subscription conversion, transparent proxying, and DNS splitting. Comes with a web control interface for configuration modifications, program control, log viewing, etc. Tested on OPNsense 24.7.11.
 
@@ -35,6 +34,7 @@ sh install.sh
 ```
 
 As shown in the figure below:  
+
 ![](images/02.png)
 
 ## Usage
