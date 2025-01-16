@@ -8,7 +8,7 @@ https://github.com/tindy2013/subconverter
 # 使用须知
 1、 项目基于 [clash（mihomo）](https://github.com/MetaCubeX/mihomo/releases) 、[sin-box](https://github.com/SagerNet/sing-box) 、[tun2socks](https://github.com/xjasonlyu/tun2socks) 、[mosdns](https://github.com/IrineSistiana/mosdns) 、[yacd](https://github.com/haishanh/yacd) 进行整合。
 
-2、 脚本不提供任何订阅信息，请自行准备Clash订阅地址。
+2、 脚本不提供任何订阅信息，请自行准备Clash订阅地址，示例配置也仅供参考。
 
 3、 使用订阅功能前请手动更改`env`文件中的`CLASH_URL`变量值，否则无法正常运行。
 
