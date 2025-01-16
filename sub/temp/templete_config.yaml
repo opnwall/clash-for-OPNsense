@@ -1,0 +1,28 @@
+port: 7890
+allow-lan: true
+mode: rule
+ipv6: true
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+external-controller: '0.0.0.0:9090'
+external-ui: /usr/local/etc/clash/ui
+secret: 'b&ZlKTte5OnEt2Sn'
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  fake-ip-range: 28.0.0.1/8
+  enhanced-mode: fake-ip 
+  use-hosts: true 
+  nameserver:
+    - 127.0.0.1:2053 
+  fallback:
+    - 1.1.1.1 
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true 
+    ipcidr:
+      - 240.0.0.0/4
+  default-nameserver:
+    - 127.0.0.1:2053
