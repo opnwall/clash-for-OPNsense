@@ -24,6 +24,8 @@
 ```bash
 sh install.sh
 ```
+如下图所示：
+!(images/02.png)
 # 使用方法
 请参考以下文章：
 
