@@ -1,4 +1,4 @@
-# clash for OPNsense 代理全家桶
+# Clash for OPNsense 代理全家桶
 这是一个在OPNSense上运行clash、sing-box、tun2socks、mosdns的一键安装程序，支持clash订阅转换，支持透明代理，支持DNS分流。带Web控制程序，可以进行配置修改、控制程序运行、查看日志等。在OPNsense 24.7.11上测试通过。
 
 # 项目来源
