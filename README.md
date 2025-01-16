@@ -27,7 +27,7 @@ sh install.sh
 # 使用方法
 请参考以下文章：
 
-[OPNsense代理全家樋安装配置教程](https://pfchina.org/?p=14148)
+[OPNsense代理全家桶安装配置教程](https://pfchina.org/?p=14148)
 
 # 常见问题
 
@@ -36,14 +36,25 @@ sh install.sh
 # 相关文章
 
 [pfSense、OPNsense配置Xray代理教程](https://pfchina.org/?p=13013)
+
 [pfSense、OPNsense配置trojan-go教程](https://pfchina.org/?p=9885)
+
 [pfSense、OPNsense配置v2ray代理教程](https://pfchina.org/?p=4032)
+
 [pfSense、OPNsense配置Clash代理教程](https://pfchina.org/?p=10526)
+
 [pfSense、OPNsense配置hysteria代理教程](https://pfchina.org/?p=9524)
+
 [pfSense、OPNsense设置http透明代理教程](https://pfchina.org/?p=13572)
+
 [pfSense、OPNsense配置sing-box代理教程](https://pfchina.org/?p=12933)
+
 [pfSense、OPNsense配置http透明代理教程](https://pfchina.org/?p=13572)
+
 [pfSense、OPNsense配置hysteria2代理教程](https://pfchina.org/?p=13065)
+
 [pfSense、OPNsense配置tun2socks透明代理](https://pfchina.org/?p=13437)
+
 [pfSense、OPNsense配置tun2socks透明代理教程](https://pfchina.org/?p=13437)
+
 [pfSense、OPNsense配置hysteria(TUN) 透明代理教程](https://pfchina.org/?p=13480)
