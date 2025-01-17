@@ -63,18 +63,6 @@ cat>/usr/bin/sub<<EOF
 bash /usr/local/etc/clash/sub/sub.sh
 EOF
 
-# 设置执行权限
-log "$YELLOW" "添加执行权限..."
-for service in clash mosdns tun2socks; do
-    chmod +x "$BIN_DIR/$service"
-    chmod +x "$RC_DIR/$service"
-	chmod +x /usr/bin/sub
-	chmod +x /usr/local/etc/rc.d/singbox
-	chmod +x /usr/local/bin/sing-box
-	chmod +x $SYS_HOOK_EARLY/11-tun2socks
-    chmod +x $SYS_HOOK_START/96-tun_if_up
-done
-echo ""
 # 安装zsh
 log "$GREEN" "安装 zsh"
 pkg add -f pkg/zsh-5.9_5.pkg
@@ -101,6 +89,19 @@ service tun2socks start
 EOF
 cat>$SYS_HOOK_START/96-tun_if_up<<EOF
 #!/bin/sh
+
+# 设置执行权限
+log "$YELLOW" "添加执行权限..."
+for service in clash mosdns tun2socks; do
+    chmod +x "$BIN_DIR/$service"
+    chmod +x "$RC_DIR/$service"
+	chmod +x /usr/bin/sub
+	chmod +x /usr/local/etc/rc.d/singbox
+	chmod +x /usr/local/bin/sing-box
+	chmod +x $SYS_HOOK_EARLY/11-tun2socks
+    chmod +x $SYS_HOOK_START/96-tun_if_up
+done
+echo ""
 
 # 启用tun虚拟网卡
 ifconfig tun_0 up
