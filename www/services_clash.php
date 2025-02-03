@@ -170,7 +170,7 @@ $config_content = file_exists($config_file) ? htmlspecialchars(file_get_contents
 <script>
 // 检查服务状态
 function checkClashStatus() {
-    fetch('/status_clash.php')
+    fetch('/status_clash.php', { cache: 'no-store' })
         .then(response => response.json())
         .then(data => {
             const statusElement = document.getElementById('clash-status');
@@ -186,7 +186,7 @@ function checkClashStatus() {
 
 // 实时刷新日志
 function refreshLogs() {
-    fetch('/status_clash_logs.php')
+    fetch('/status_clash_logs.php', { cache: 'no-store' })
         .then(response => response.text())
         .then(logContent => {
             const logViewer = document.getElementById('log-viewer');

@@ -165,7 +165,7 @@ $config_content = file_exists($config_file) ? htmlspecialchars(file_get_contents
 <script>
 // 检查服务状态
 function checkMosdnsStatus() {
-    fetch('/status_mosdns.php')
+    fetch('/status_mosdns.php', { cache: 'no-store' })
         .then(response => response.json())
         .then(data => {
             const statusElement = document.getElementById('mosdns-status');
@@ -181,7 +181,7 @@ function checkMosdnsStatus() {
 
 // 实时刷新日志
 function refreshLogs() {
-    fetch('/status_mosdns_logs.php')
+    fetch('/status_mosdns_logs.php', { cache: 'no-store' })
         .then(response => response.text())
         .then(logContent => {
             const logViewer = document.getElementById('log-viewer');

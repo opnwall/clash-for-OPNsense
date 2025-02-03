@@ -171,7 +171,7 @@ $config_content = file_exists($config_file) ? htmlspecialchars(file_get_contents
 <script>
 // 检查服务状态
 function checkTun2socksStatus() {
-    fetch('/status_tun2socks.php')
+    fetch('/status_tun2socks.php', { cache: 'no-store' })
         .then(response => response.json())
         .then(data => {
             const statusElement = document.getElementById('tun2socks-status');
@@ -187,7 +187,7 @@ function checkTun2socksStatus() {
 
 // 实时刷新日志
 function refreshLogs() {
-    fetch('/status_tun2socks_logs.php')
+    fetch('/status_tun2socks_logs.php', { cache: 'no-store' })
         .then(response => response.text())
         .then(logContent => {
             const logViewer = document.getElementById('log-viewer');

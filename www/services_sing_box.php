@@ -167,7 +167,8 @@ $config_content = file_exists($config_file) ? htmlspecialchars(file_get_contents
 <script>
 // 检查服务状态
 function checkSingBoxStatus() {
-    fetch('/status_sing_box.php')
+    console.log("Checking Sing-Box status..."); // 调试信息
+    fetch('/status_sing_box.php', { cache: 'no-store' })
         .then(response => response.json())
         .then(data => {
             const statusElement = document.getElementById('sing-box-status');
@@ -180,10 +181,9 @@ function checkSingBoxStatus() {
             }
         });
 }
-
-// 实时刷新日志
+// 刷新日志
 function refreshLogs() {
-    fetch('/status_sing_box_logs.php')
+    fetch('/status_sing_box_logs.php', { cache: 'no-store' })
         .then(response => response.text())
         .then(logContent => {
             const logViewer = document.getElementById('log-viewer');
@@ -197,12 +197,11 @@ function refreshLogs() {
             logViewer.scrollTop = logViewer.scrollHeight;
         });
 }
-
 // 初始化
 document.addEventListener('DOMContentLoaded', () => {
     checkSingBoxStatus();
     refreshLogs();
-    setInterval(checkSingBoxStatus, 3000);
+    setInterval(checkSingBoxStatus, 2000);
     setInterval(refreshLogs, 2000);
 });
 </script>

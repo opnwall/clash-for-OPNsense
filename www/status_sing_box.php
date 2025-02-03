@@ -1,11 +1,13 @@
 <?php
+// status_sing_box.php
 header('Content-Type: application/json');
 
-// 检查 sing-box 服务状态
-$service_status = trim(shell_exec("service singbox status"));
+// 检查sing-box进程是否存在
+exec("pgrep -x sing-box", $output, $return_var);
 
-if (strpos($service_status, 'is running') !== false) {
+if ($return_var === 0) {
     echo json_encode(['status' => 'running']);
 } else {
     echo json_encode(['status' => 'stopped']);
 }
+?>
