@@ -1,9 +1,4 @@
 <?php
-$log_file = "/var/log/mosdns.log"; // 日志文件路径
-
-if (file_exists($log_file)) {
-    readfile($log_file);
-} else {
-    echo "Log file not found.";
-}
+header('Content-Type: text/plain');
+echo shell_exec("tail -n 100 /var/log/mosdns.log 2>&1");
 ?>

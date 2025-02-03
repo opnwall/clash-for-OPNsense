@@ -49,6 +49,9 @@ if ($_POST) {
     if ($action === 'save_config') {
         $config_content = $_POST['config_content'];
         $message = saveConfig($config_file, $config_content);
+    } elseif ($action === 'clear_log') {
+        file_put_contents($log_file, ""); // 清空日志文件
+        $message = "日志已清空！";
     } else {
         $message = handleServiceAction($action);
     }
@@ -156,8 +159,13 @@ $config_content = file_exists($config_file) ? htmlspecialchars(file_get_contents
                             </tr>
                             <tr>
                                 <td>
-                                    <textarea style="max-width:none" id="log-viewer" rows="10" class="form-control"
-                                        readonly></textarea>
+                                    <form method="post">
+                                        <textarea style="max-width:none" id="log-viewer" rows="10" class="form-control" readonly></textarea>
+                                        <br>
+                                        <button type="submit" name="action" value="clear_log" class="btn btn-danger">
+                                            <i class="fa fa-trash"></i> 清空日志
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         </tbody>
@@ -200,8 +208,8 @@ function refreshLogs() {
 document.addEventListener('DOMContentLoaded', () => {
     checkTun2socksStatus();
     refreshLogs();
-    setInterval(checkTun2socksStatus, 5000);
-    setInterval(refreshLogs, 3000);
+    setInterval(checkTun2socksStatus, 3000);
+    setInterval(refreshLogs, 2000);
 });
 </script>
 

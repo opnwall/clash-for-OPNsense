@@ -1,14 +1,11 @@
 <?php
 header('Content-Type: application/json');
 
-$service_status = [];
-exec("service mosdns status", $output, $return_var);
+// 检查 Clash 运行状态
+exec("pgrep -f '/usr/local/bin/mosdns'", $output, $return_var);
 
 if ($return_var === 0) {
-    $service_status['status'] = "running";
+    echo json_encode(["status" => "running"]);
 } else {
-    $service_status['status'] = "stopped";
+    echo json_encode(["status" => "stopped"]);
 }
-
-echo json_encode($service_status);
-?>
