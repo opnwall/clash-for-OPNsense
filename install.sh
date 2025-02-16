@@ -40,6 +40,7 @@ mkdir -p "$CONF_DIR/sing-box" "$CONF_DIR/clash" "$CONF_DIR/clash/sub" "$CONF_DIR
 log "$YELLOW" "复制文件..."
 log "$YELLOW" "生成菜单..."
 log "$YELLOW" "生成服务..."
+chmod +x bin/*
 cp -f bin/* "$BIN_DIR/" || log "$RED" "bin 文件复制失败！"
 cp -f www/* "$WWW_DIR/" || log "$RED" "www 文件复制失败！"
 cp -R sub/* "$CONF_DIR/clash/sub/" || log "$RED" "sub 文件复制失败！"
